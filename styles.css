@@ -31,8 +31,35 @@
   top: 180px;
   left: 50%;
   transform: translateX(-50%);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Mailchimp Form Styling */
+#mc_embed_signup input[type="email"], 
+#mc_embed_signup input[type="text"] {
   width: 100%;
-  max-width: 600px;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#mc-embedded-subscribe {
+  background-color: #e50914 !important;
+  color: white !important;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#mc-embedded-subscribe:hover {
+  background-color: #b0070a !important;
 }
 
 /* Adverts Section */
@@ -69,4 +96,13 @@
   .header-text { max-width: 200px; }
   .adverts img { max-width: 100px; }
   .signup-section { top: 150px; }
+  #mc_embed_signup input[type="email"],
+  #mc_embed_signup input[type="text"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+  #mc-embedded-subscribe {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
 }
