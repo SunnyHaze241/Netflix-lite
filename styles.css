@@ -36,17 +36,30 @@
   text-align: center;
 }
 
-/* Mailchimp Form Styling */
+/* Mailchimp Heading */
+.mc-heading {
+  color: #fff;
+  text-shadow: 0 0 6px #fff, 0 0 12px #fff;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Mailchimp Form Inputs */
 #mc_embed_signup input[type="email"], 
 #mc_embed_signup input[type="text"] {
   width: 100%;
+  max-width: 300px;
   padding: 14px;
-  margin-bottom: 12px;
+  margin: 0 auto 12px;
+  display: block;
   border: none;
   border-radius: 6px;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
+/* Mailchimp Submit Button */
 #mc-embedded-subscribe {
   background-color: #e50914 !important;
   color: white !important;
@@ -98,6 +111,7 @@
   .signup-section { top: 150px; }
   #mc_embed_signup input[type="email"],
   #mc_embed_signup input[type="text"] {
+    max-width: 250px;
     font-size: 14px;
     padding: 10px;
   }
@@ -106,6 +120,7 @@
     padding: 10px 16px;
   }
 }
+
 
 
 
