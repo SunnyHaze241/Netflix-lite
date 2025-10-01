@@ -1,0 +1,72 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Background */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('assets/images/background.png') center/cover no-repeat;
+  filter: blur(4px) brightness(0.6);
+  z-index: -1;
+}
+
+/* Header images */
+.site-header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header-text { max-width: 300px; }
+
+/* Signup Section */
+.signup-section {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Adverts Section */
+.adverts-section {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.adverts {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.adverts img { max-width: 150px; height: auto; }
+
+/* Footer Text */
+.footer-text p {
+  color: #00f;
+  font-weight: 600;
+  margin: 5px 0;
+  text-shadow: 0 0 8px #00f, 0 0 12px #00f;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header-text { max-width: 200px; }
+  .adverts img { max-width: 100px; }
+  .signup-section { top: 150px; }
+}
