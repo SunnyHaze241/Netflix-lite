@@ -1,108 +1,125 @@
-/* Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* ============================
+   Global Styles
+   ============================ */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica', Arial, sans-serif;
+  overflow-x: hidden;
+}
 
-/* Background */
+/* Background Image */
 .background {
+  background: url('assets/images/background.png') no-repeat center center/cover;
+  filter: blur(2px) brightness(0.85);
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: url('assets/images/background.png') center/cover no-repeat;
-  filter: blur(4px) brightness(0.6);
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
 
-/* Header images */
-.site-header {
+/* Header Section */
+header {
   position: absolute;
   top: 20px;
   left: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+  z-index: 10;
 }
 
-.header-text { max-width: 300px; }
+.header-text img {
+  display: block;
+}
 
-/* Signup Section */
-.signup-section {
-  position: absolute;
-  top: 180px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 500px;
+.header-line1 {
+  width: 150px;
+  margin-bottom: -10px;
+}
+
+.header-line2 {
+  width: 250px;
+}
+
+/* ============================
+   Mailchimp Form Styles
+   ============================ */
+#mc_embed_signup {
+  background-color: #000;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 600px;
+  margin: 40px auto;
   text-align: center;
+  color: #00f;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-/* Mailchimp Form Styling */
-#mc_embed_signup input[type="email"], 
-#mc_embed_signup input[type="text"] {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 12px;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-}
-
-#mc-embedded-subscribe {
-  background-color: #e50914 !important;
-  color: white !important;
+#mc_embed_signup h2 {
+  color: #000;
+  text-shadow: 
+    0 0 3px #fff, 
+    0 0 6px #fff, 
+    0 0 9px #fff;
+  font-size: 28px;
   font-weight: bold;
+  margin-bottom: 25px;
+}
+
+#mc_embed_signup .mc-field-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #00f;
+  text-shadow: 0 0 2px #fff;
+}
+
+#mc_embed_signup input[type="email"],
+#mc_embed_signup input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: #111;
+  color: #fff;
+}
+
+#mc_embed_signup input[type="submit"] {
+  background-color: #e50914;
+  color: #fff;
+  padding: 12px 30px;
   font-size: 16px;
-  border-radius: 6px;
-  padding: 12px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: 0.3s all;
 }
 
-#mc-embedded-subscribe:hover {
-  background-color: #b0070a !important;
+#mc_embed_signup input[type="submit"]:hover {
+  background-color: #f40612;
+  box-shadow: 0 0 10px #fff;
 }
 
-/* Adverts Section */
-.adverts-section {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  padding: 20px 0;
+/* ============================
+   Footer / Adverts Section
+   ============================ */
+footer {
+  background-color: #000;
+  padding: 30px 0;
   text-align: center;
 }
 
-.adverts {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+.adverts img {
+  margin: 0 10px;
+  max-width: 100px;
 }
 
-.adverts img { max-width: 150px; height: auto; }
-
-/* Footer Text */
 .footer-text p {
   color: #00f;
-  font-weight: 600;
+  text-shadow: 0 0 3px #fff;
   margin: 5px 0;
-  text-shadow: 0 0 8px #00f, 0 0 12px #00f;
-  text-align: center;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .header-text { max-width: 200px; }
-  .adverts img { max-width: 100px; }
-  .signup-section { top: 150px; }
-  #mc_embed_signup input[type="email"],
-  #mc_embed_signup input[type="text"] {
-    font-size: 14px;
-    padding: 10px;
-  }
-  #mc-embedded-subscribe {
-    font-size: 14px;
-    padding: 10px 16px;
-  }
-}
+
