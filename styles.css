@@ -37,12 +37,16 @@
 }
 
 /* Mailchimp Heading */
+
 .mc-heading {
-  color: #fff;
-  text-shadow: 0 0 6px #fff, 0 0 12px #fff;
+  color: black;                /* Black text fill */
+  text-shadow: 
+    0 0 2px white,             /* subtle white glow */
+    0 0 4px white;             /* slightly stronger outer glow */
   font-size: 28px;
   margin-bottom: 20px;
   font-weight: bold;
+  text-align: center;          /* center the heading */
 }
 
 /* Mailchimp Form Inputs */
@@ -120,6 +124,7 @@
     padding: 10px 16px;
   }
 }
+
 
 
 
