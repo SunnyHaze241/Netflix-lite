@@ -57,10 +57,6 @@ header {
 
 #mc_embed_signup h2 {
   color: #000;
-  text-shadow: 
-    0 0 3px #fff, 
-    0 0 6px #fff, 
-    0 0 9px #fff;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 25px;
@@ -71,7 +67,6 @@ header {
   margin-bottom: 5px;
   font-weight: bold;
   color: #00f;
-  text-shadow: 0 0 2px #fff;
 }
 
 #mc_embed_signup input[type="email"],
@@ -118,7 +113,6 @@ footer {
 
 .footer-text p {
   color: #00f;
-  text-shadow: 0 0 3px #fff;
   margin: 5px 0;
 }
 
