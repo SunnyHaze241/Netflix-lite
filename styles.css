@@ -153,6 +153,12 @@
     padding-bottom: 180px; /* push footer lower */
   }
 }
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  .adverts-section {
+    display: none !important;
+  }
+}
+
 
 
 
