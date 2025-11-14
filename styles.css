@@ -27,14 +27,12 @@
 
 /* Signup Section */
 .signup-section {
-  position: absolute;
-  top: 180px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 200px auto 40px; /* pushes it down under header */
   width: 90%;
   max-width: 500px;
   text-align: center;
 }
+
 
 /* Mailchimp Heading */
 
@@ -82,14 +80,13 @@
 /* Adverts Section */
 
 .adverts-section {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* black with 80% opacity */
-  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 0 40px;
   text-align: center;
-
+  margin-top: 60px; /* spacing above footer */
 }
+
 
 .adverts {
   display: flex;
@@ -110,22 +107,54 @@
   text-align: center;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .header-text { max-width: 200px; }
   .adverts img { max-width: 100px; }
-  .signup-section { top: 150px; }
+
+  .signup-section {
+    margin-top: 140px;
+    margin-bottom: 180px;
+  }
+
   #mc_embed_signup input[type="email"],
   #mc_embed_signup input[type="text"] {
     max-width: 250px;
     font-size: 14px;
     padding: 10px;
   }
+
   #mc-embedded-subscribe {
     font-size: 14px;
     padding: 10px 16px;
   }
+
+  /* 👉 ADD THIS */
+  #mc-embedded-subscribe {
+    margin-bottom: 20px;
+  }
+
+  /* 👉 ADD THIS */
+  .adverts-section {
+    padding-bottom: 120px;
+  }
 }
+
+/* Portrait mode fix */
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  .signup-section {
+    margin-bottom: 260px;  /* increase spacing to clear footer */
+  }
+
+  #mc-embedded-subscribe {
+    margin-bottom: 40px; /* decouple button from footer */
+  }
+
+  .adverts-section {
+    padding-bottom: 180px; /* push footer lower */
+  }
+}
+
+
 
 
 
