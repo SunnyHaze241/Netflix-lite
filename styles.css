@@ -158,6 +158,21 @@
     display: none !important;
   }
 }
+/* Completely remove adverts + footer in portrait mobile */
+@media screen and (max-width: 700px) and (orientation: portrait) {
+  .adverts-section,
+  .adverts,
+  .footer-text {
+    display: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+}
+
 
 
 
