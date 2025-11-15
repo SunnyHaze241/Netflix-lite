@@ -27,27 +27,25 @@
 
 /* Signup Section */
 .signup-section {
-  margin: 200px auto 40px; /* pushes it down under header */
+  margin: 200px auto 40px;
   width: 90%;
   max-width: 500px;
   text-align: center;
 }
 
-
 /* Mailchimp Heading */
-
 .mc-heading {
-  color: black;                /* Black text fill */
+  color: black;
   text-shadow: 
-    0 0 2px white,             /* subtle white glow */
-    0 0 4px white;             /* slightly stronger outer glow */
+    0 0 2px white,
+    0 0 4px white;
   font-size: 28px;
   margin-bottom: 20px;
   font-weight: bold;
-  text-align: center;          /* center the heading */
+  text-align: center;
 }
 
-/* Mailchimp Form Inputs */
+/* Mailchimp inputs */
 #mc_embed_signup input[type="email"], 
 #mc_embed_signup input[type="text"] {
   width: 100%;
@@ -58,10 +56,9 @@
   border: none;
   border-radius: 6px;
   font-size: 16px;
-  box-sizing: border-box;
 }
 
-/* Mailchimp Submit Button */
+/* Submit btn */
 #mc-embedded-subscribe {
   background-color: #e50914 !important;
   color: white !important;
@@ -77,11 +74,9 @@
   background-color: #b0070a !important;
 }
 
-
-
+/* Mobile tweaks */
 @media (max-width: 600px) {
   .header-text { max-width: 200px; }
-  .adverts img { max-width: 100px; }
 
   .signup-section {
     margin-top: 140px;
@@ -98,30 +93,20 @@
   #mc-embedded-subscribe {
     font-size: 14px;
     padding: 10px 16px;
-  }
-
-  /* 👉 ADD THIS */
-  #mc-embedded-subscribe {
     margin-bottom: 20px;
-  }
-
-  /* 👉 ADD THIS */
-  .adverts-section {
-    padding-bottom: 120px;
   }
 }
 
-/* Portrait mode fix */
+/* Portrait mode hotfix */
 @media screen and (max-width: 600px) and (orientation: portrait) {
   .signup-section {
-    margin-bottom: 260px;  /* increase spacing to clear footer */
+    margin-bottom: 260px;
   }
 
   #mc-embedded-subscribe {
-    margin-bottom: 40px; /* decouple button from footer */
+    margin-bottom: 40px;
   }
-
-
+}
 
 
 
